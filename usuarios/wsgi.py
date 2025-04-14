@@ -8,10 +8,9 @@ https://docs.djangoproject.com/en/5.2/howto/deployment/wsgi/
 """
 
 import os
-
-from usuarios.views import hola_mundo
-
+from django.core.wsgi import get_wsgi_application
 
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'usuarios.settings')
 
-application = hola_mundo()
+application = get_wsgi_application()
+
