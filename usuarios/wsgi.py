@@ -14,4 +14,4 @@ from usuarios.views import hola_mundo
 
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'usuarios.settings')
 
-application = get_wsgi_application()
+application = hola_mundo()
