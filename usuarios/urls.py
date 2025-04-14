@@ -16,10 +16,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from tu_app.views import hola_mundo  # reemplaza `tu_app` con el nombre real
+from usuarios.views import hola_mundo  # Importa la vista correctamente
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('', hola_mundo),  # Página de inicio con tu vista
+    path('hola/', hola_mundo),  # Ruta para acceder a la vista
 ]
+
 
