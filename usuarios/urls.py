@@ -16,9 +16,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from . import views
+from tu_app.views import hola_mundo  # reemplaza `tu_app` con el nombre real
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('hola_mundo/', views.hola_mundo, name='hola_mundo'),
+    path('', hola_mundo),  # Página de inicio con tu vista
 ]
+
