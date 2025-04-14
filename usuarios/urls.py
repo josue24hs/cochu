@@ -16,10 +16,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from usuarios.views import hola_mundo  # Importa la vista correctamente
+from usuarios.views import hola_mundo  # Asegúrate de que la vista esté importada
 
 urlpatterns = [
-    path('hola/', hola_mundo),  # Ruta para acceder a la vista
+    path('', hola_mundo),  # Ruta para la raíz
 ]
+
 
 

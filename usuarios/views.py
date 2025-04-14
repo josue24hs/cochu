@@ -1,4 +1,4 @@
 from django.http import HttpResponse
 
-def hola_mundo(request):  # Asegúrate de que se reciba `request` como argumento
+def hola_mundo(request):
     return HttpResponse("Hola Mundo desde Django!")
